@@ -13,8 +13,6 @@ indicator = st.sidebar.selectbox("Select Indicator", ["Population", "GDP", "Econ
 if indicator == "Population":
     st.header("Population Data")
     # Use Pandas DataFrame for population data
-    print(population_data)
-
     df = pd.DataFrame(population_data)
     st.write(df)
     
